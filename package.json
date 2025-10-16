@@ -25,26 +25,26 @@
 	"contributes": {
 		"languages": [
 			{
-				"id": "arm",
+				"id": "armlite",
 				"aliases": [
-					"ARM",
-					"arm",
-					"Arm"
+					"ARMLite",
+					"armlite"
 				],
 				"extensions": [
-					".s",
-					".S",
 					".asm",
-					".sx"
+					".armlite"
 				],
 				"configuration": "./language-configuration.json"
 			}
 		],
 		"grammars": [
 			{
-				"language": "arm",
-				"scopeName": "source.arm",
-				"path": "./syntaxes/arm.tmlanguage.json"
+				"language": "armlite",
+				"scopeName": "source.armlite",
+				"path": "./syntaxes/armlite.tmlanguage.json",
+				"embeddedLanguages": {
+					"meta.embedded.markdown": "markdown"
+				}
 			}
 		]
 	}
